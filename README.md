@@ -1,2 +1,11 @@
 # jupyter-scala-bt
-Templates for build tools integration of jupyter-scala notebooks
+
+You can add project/notebooks dependencies in ```build.sbt```
+To setup jar run ```sbt assembly```.
+
+Then in notebook run
+```scala
+import $file.scripts.importer
+
+importer.loadProjectDependencies
+```
