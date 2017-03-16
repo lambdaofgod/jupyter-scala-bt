@@ -7,5 +7,9 @@ Each template uses ammonite script to load jars from appropriate directory.
 [jupyter-scala](https://github.com/alexarchambault/jupyter-scala)
 
 ### Available templates
-* plain (specify project's jar directory in notebooks/scripts/importer.sc - default is lib/)
+* plain
 * SBT (uses assembly plugin)
+
+### How to use it (for existing project)
+Put appropriate directories at toplevel of your project. Specify project's jar location in *notebooks/scripts/importer.sc* (default is *lib*).
+See *example.ipynb* for how to use importer.
